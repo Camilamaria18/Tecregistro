@@ -1,20 +1,122 @@
 # TecRegistro
 
-Sistema de gerenciamento de atendimentos técnicos e materiais da LF Segurança Eletrônica.
+## Sobre o projeto
 
-## Objetivo
-Organizar os registros de serviços realizados pelos técnicos, substituindo o envio informal de informações pelo WhatsApp.
+O **TecRegistro** é um sistema web desenvolvido em Python e Django para auxiliar a **LF Segurança Eletrônica** no gerenciamento de atendimentos técnicos.
 
-## Tecnologias
-- Python
-- Django
-- SQLite (desenvolvimento)
+O projeto surgiu da necessidade de organizar as informações dos serviços realizados pelos técnicos, que anteriormente eram comunicadas de maneira informal, principalmente pelo WhatsApp.
 
-## Funcionalidades
-- Cadastro de atendimentos técnicos
-- Registro de materiais utilizados e danificados
-- Consulta de atendimentos
-- Administração de registros pelo Django Admin
+O objetivo é facilitar o registro, a organização e a consulta dos atendimentos, incluindo os materiais utilizados e danificados durante os serviços.
 
-## Status
-Protótipo acadêmico em desenvolvimento.
+## Objetivos
+
+- Centralizar as informações dos atendimentos técnicos.
+- Facilitar o registro dos serviços realizados.
+- Organizar os materiais utilizados e danificados.
+- Melhorar a consulta dos históricos de atendimento.
+- Apoiar o trabalho administrativo da empresa.
+
+## Tecnologias utilizadas
+
+- **Python:** linguagem de programação.
+- **Django:** framework para desenvolvimento web.
+- **SQLite:** banco de dados utilizado no desenvolvimento.
+- **HTML:** estrutura das interfaces planejadas.
+- **Git:** controle de versões.
+- **GitHub:** armazenamento e acompanhamento do código-fonte.
+
+## Funcionalidades implementadas
+
+### Cadastro de atendimentos
+
+Registro das informações dos atendimentos técnicos, incluindo cliente, técnico responsável, data, descrição e status.
+
+### Controle de materiais
+
+Registro dos materiais utilizados nos atendimentos, incluindo quantidades utilizadas e danificadas.
+
+### Painel administrativo
+
+Utilização do Django Admin para cadastrar, consultar e gerenciar os registros do sistema.
+
+## Estrutura do projeto
+
+- `atendimentos/` — aplicação responsável pelos registros de atendimentos e materiais.
+- `config/` — configurações principais do Django.
+- `manage.py` — gerenciamento e execução do projeto.
+- `.gitignore` — definição dos arquivos que não devem ser enviados ao repositório.
+- `README.md` — documentação do projeto.
+
+## Como executar o projeto
+
+### 1. Requisitos
+
+- Python 3.12
+- Django 5.2
+- Git
+
+### 2. Baixar o projeto
+
+```bash
+git clone https://github.com/Camilamaria18/Tecregistro.git
+```
+
+### 3. Acessar a pasta
+
+```bash
+cd Tecregistro
+```
+
+### 4. Instalar o Django
+
+```bash
+python -m pip install "Django==5.2"
+```
+
+### 5. Preparar o banco de dados
+
+```bash
+python manage.py migrate
+```
+
+### 6. Iniciar o servidor
+
+```bash
+python manage.py runserver 8001
+```
+
+### 7. Acessar o sistema
+
+Abra o navegador e acesse:
+
+http://127.0.0.1:8001/admin/
+
+Para acessar o painel administrativo, utilize uma conta de administrador previamente criada.
+
+Caso seja necessário criar uma conta, execute:
+
+```bash
+python manage.py createsuperuser
+```
+
+## Controle de versão
+
+O código-fonte é gerenciado com Git e disponibilizado no GitHub. O histórico de commits permite acompanhar as alterações realizadas durante o desenvolvimento.
+
+## Melhorias futuras
+
+- Desenvolvimento de uma interface específica para os técnicos.
+- Ampliação dos recursos de consulta.
+- Implementação de testes automatizados.
+- Configuração de integração contínua.
+- Aprimoramento da experiência dos usuários.
+
+## Status do projeto
+
+**Protótipo acadêmico em desenvolvimento.**
+
+A versão atual permite o gerenciamento básico de atendimentos e materiais por meio do painel administrativo do Django.
+
+## Projeto acadêmico
+
+Desenvolvido para a atividade **Projeto de Software – Experiência Prática 3**, com foco na implementação de software, controle de versão, testes e validação de soluções tecnológicas.
