@@ -120,3 +120,6 @@ A versão atual permite o gerenciamento básico de atendimentos e materiais por 
 ## Projeto acadêmico
 
 Desenvolvido para a atividade **Projeto de Software – Experiência Prática 3**, com foco na implementação de software, controle de versão, testes e validação de soluções tecnológicas.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f3170299-528b-41dd-ba09-e3eff485df67" />
+
